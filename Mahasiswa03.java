@@ -1,5 +1,3 @@
-package js9Stack;
-
 public class Mahasiswa03 {
 
     String nama, nim, kelas;

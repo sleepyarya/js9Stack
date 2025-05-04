@@ -1,5 +1,3 @@
-package js9Stack;
-
 public class StackTugasMahasiswa03 {
     Mahasiswa03[] stack;
     int top;
@@ -71,4 +69,19 @@ public class StackTugasMahasiswa03 {
             System.out.println(stack[i].nama + "\t" + stack[i].nim + "\t" + stack[i].kelas);
         }
     }
+
+    public String konversiDesimalKeBiner(int nilai) {
+        StackKonversi03 stack = new StackKonversi03();
+        while (nilai > 0) {
+            int sisa = nilai % 2;
+            stack.push(sisa);
+            nilai /= 2;
+        }
+        String biner = "";
+        while (!stack.isEmpty()) {
+            biner += stack.pop();
+        }
+        return biner;
+    }
+
 }
