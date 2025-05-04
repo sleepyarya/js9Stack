@@ -72,7 +72,7 @@ public class StackTugasMahasiswa03 {
 
     public String konversiDesimalKeBiner(int nilai) {
         StackKonversi03 stack = new StackKonversi03();
-        while (nilai > 0) {
+        while (nilai != 0) {
             int sisa = nilai % 2;
             stack.push(sisa);
             nilai /= 2;
@@ -83,5 +83,6 @@ public class StackTugasMahasiswa03 {
         }
         return biner;
     }
+    
 
 }
