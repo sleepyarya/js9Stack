@@ -1,14 +1,15 @@
 package js9Stack;
+
 import java.util.Scanner;
 
 public class MahasiswaDemo03 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         StackTugasMahasiswa03 stack = new StackTugasMahasiswa03(5);
-        int pilih; // Deklarasikan di luar do-while
+        int pilih;
 
         do {
-            System.out.println("\nMenu:");
+            System.out.println("Menu:");
             System.out.println("1. Mengumpulkan Tugas");
             System.out.println("2. Menilai Tugas");
             System.out.println("3. Melihat Tugas Teratas");
@@ -20,12 +21,12 @@ public class MahasiswaDemo03 {
             switch (pilih) {
                 case 1:
                     System.out.print("\nNama: ");
-                    String name = scan.nextLine();
+                    String nama = scan.nextLine();
                     System.out.print("NIM: ");
                     String nim = scan.nextLine();
                     System.out.print("Kelas: ");
                     String kelas = scan.nextLine();
-                    Mahasiswa03 mhs = new Mahasiswa03(name, nim, kelas);
+                    Mahasiswa03 mhs = new Mahasiswa03(nama, nim, kelas);
                     stack.push(mhs);
                     System.out.printf("Tugas %s berhasil dikumpulkan\n", mhs.nama);
                     break;

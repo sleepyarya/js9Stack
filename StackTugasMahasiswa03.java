@@ -1,4 +1,5 @@
 package js9Stack;
+
 public class StackTugasMahasiswa03 {
     Mahasiswa03[] stack;
     int top;
@@ -57,9 +58,8 @@ public class StackTugasMahasiswa03 {
     }
 
     public void print() {
-        for (int i = 0; i <= top; i++) {
+        for (int i = top; i >= 0; i--) {
             System.out.println(stack[i].nama + "\t" + stack[i].nim + "\t" + stack[i].kelas);
         }
-        System.out.println("");
     }
 }
